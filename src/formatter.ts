@@ -699,6 +699,13 @@ export class Formatter {
                   if (!options.showPassedTests && !isFailure) {
                     skippedPassedTests++
                     continue
+                  } else {
+                      if (options.showPassedTests) {
+                          resultLines.push('Show Passed Tests is TRUE 704')
+                      }
+                      if (isFailure) {
+                          resultLines.push('Show Passed Tests isFailure 704')
+                      }
                   }
 
                   const configuration = summary.configuration
@@ -714,6 +721,13 @@ export class Formatter {
                 } else {
                   if (!options.showPassedTests && !isFailure) {
                     continue
+                  } else {
+                      if (options.showPassedTests) {
+                          resultLines.push('Show Passed Tests is TRUE 726')
+                      }
+                      if (isFailure) {
+                          resultLines.push('Show Passed Tests isFailure 726')
+                      }
                   }
                   if (testResult.name) {
                     const anchorTag = anchorNameTag(
@@ -819,6 +833,13 @@ export class Formatter {
               } else {
                 if (!options.showPassedTests && !isFailure) {
                   continue
+                } else {
+                    if (options.showPassedTests) {
+                        resultLines.push('Show Passed Tests is TRUE 838')
+                    }
+                    if (isFailure) {
+                        resultLines.push('Show Passed Tests isFailure 838')
+                    }
                 }
                 if (testResult.name) {
                   const anchorTag = anchorNameTag(
