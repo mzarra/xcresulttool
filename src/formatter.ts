@@ -696,16 +696,15 @@ export class Formatter {
                     const testMethod = `${testMethodAnchor}${testMethodIcon}&nbsp;<code>${testResult.name}</code>${backAnchorLink}`
                     resultLines.push(`${status} ${testMethod}`)
                   }
+                  if (options.showPassedTests) {
+                      resultLines.push(' <br><b>MSZ:</b> Show Passed Tests is TRUE 699')
+                  }
+                  if (isFailure) {
+                      resultLines.push(' <br><b>MSZ:</b> Show Passed Tests isFailure 699')
+                  }
                   if (!options.showPassedTests && !isFailure) {
                     skippedPassedTests++
                     continue
-                  } else {
-                      if (options.showPassedTests) {
-                          resultLines.push('Show Passed Tests is TRUE 704')
-                      }
-                      if (isFailure) {
-                          resultLines.push('Show Passed Tests isFailure 704')
-                      }
                   }
 
                   const configuration = summary.configuration
