@@ -54,7 +54,7 @@ const testClassIcon = Image.icon('test-class.png')
 const testMethodIcon = Image.icon('test-method.png')
 const attachmentIcon = Image.icon('attachment.png')
 
-export class Formatter {
+// export class Formatter {
   readonly summaries = ''
   readonly details = ''
 
