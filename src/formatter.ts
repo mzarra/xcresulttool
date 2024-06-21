@@ -230,7 +230,7 @@ export class Formatter {
         groups[identifier] = group
       }
 
-      chapterSummary.content.push('### Summary')
+      chapterSummary.content.push('### Summary FRED')
 
       chapterSummary.content.push('<table>')
       chapterSummary.content.push('<tr>')
@@ -265,6 +265,11 @@ export class Formatter {
       chapterSummary.content.push('</table>\n')
 
       chapterSummary.content.push('---\n')
+      
+      if (testSummary.stats.passed == testSummary.stats.total) {
+          chapterSummary.content.push('<b>MSZ SKIPPING DETAIL</b></p>')
+          continue
+      }
 
       if (testSummary.stats.failed > 0) {
         testReport.testStatus = 'failure'
