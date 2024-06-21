@@ -72,7 +72,7 @@ export class Formatter {
     const actionsInvocationRecord: ActionsInvocationRecord =
       await this.parser.parse()
 
-    const testReport = new TestReport()
+    //const testReport = new TestReport()
 
     if (actionsInvocationRecord.metadataRef) {
       const metadata: ActionsInvocationMetadata = await this.parser.parse(
