@@ -40,7 +40,7 @@ export class TestReport {
         }
 
         const summaryContent = chapterSummary.content.join('\n')
-        lines.push(`${summaryTitle}\n\n${summaryContent}`)
+        lines.push(`${summaryTitle} MSZ FRED FRED\n\n${summaryContent}`)
       }
     }
 
