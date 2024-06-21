@@ -14,6 +14,9 @@ async function run(): Promise<void> {
   try {
     const inputPaths = core.getMultilineInput('path')
     const showPassedTests = core.getBooleanInput('show-passed-tests')
+    core.warning(
+    `MSZ showPassedTests (${showPassedTests}).`
+    )
     const showCodeCoverage = core.getBooleanInput('show-code-coverage')
     let uploadBundles = core.getInput('upload-bundles').toLowerCase()
     if (uploadBundles === 'true') {
