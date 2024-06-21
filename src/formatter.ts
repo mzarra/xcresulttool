@@ -312,7 +312,7 @@ export class Formatter {
           chapterSummary.content.push('<tr>')
           const testClass = `${testClassIcon}&nbsp;${identifier}`
           const testClassAnchor = anchorNameTag(
-            `${groupIdentifier}_${identifier}_summary`
+            `${groupIdentifier}_${identifier}_summary MSZ315`
           )
           const anchorName = anchorIdentifier(
             `${groupIdentifier}_${identifier}`
